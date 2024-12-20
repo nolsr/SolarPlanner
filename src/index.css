@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+@layer base {
+  h1 {
+    @apply text-3xl font-bold font-semibold;
+  }
+
+  h2 {
+    @apply text-2xl font-semibold mb-4;
+  }
+
+  h3 {
+    @apply text-xl font-semibold mb-2 mt-8;
+  }
+  
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
